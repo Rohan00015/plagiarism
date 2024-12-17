@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plagiarism Checker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Plagiarism Checker</h1>
+        <textarea id="inputText" placeholder="Enter your text here"></textarea>
+        <button id="checkBtn">Check Plagiarism</button>
+        <button id="removeBtn">Remove Plagiarism</button>
+        <div id="result">
+            <h2>Results</h2>
+            <p><b>Plagiarism Percentage:</b> <span id="plagiarismPercentage"></span>%</p>
+            <p><b>Unique Content Percentage:</b> <span id="uniquePercentage"></span>%</p>
+            <h3>Plagiarized Sentences:</h3>
+            <ul id="plagiarizedSentences"></ul>
+            <h3>Unique Sentences:</h3>
+            <ul id="uniqueSentences"></ul>
+        </div>
+        <div id="rewrittenTextSection" style="display: none;">
+            <h2>Rewritten Text</h2>
+            <p id="rewrittenText"></p>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
